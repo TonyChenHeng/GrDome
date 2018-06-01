@@ -4,30 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="chenheng.grapplication.MainActivity"
-    tools:layout_editor_absoluteY="81dp">
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline_h"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.8" />
-
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline_w"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.8" />
-
-    <TextView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="#612"
-        app:layout_constraintLeft_toRightOf="@id/guideline_w"
-        app:layout_constraintTop_toBottomOf="@id/guideline_h" />
+    tools:context="chenheng.grapplication.MainActivity">
 
     <TextView
         android:id="@+id/banner"
@@ -35,45 +12,21 @@
         android:layout_height="0dp"
         android:background="#765"
         android:gravity="center"
-        android:text="Banner"
-        app:layout_constraintDimensionRatio="H,16:7"
+        android:text="功能列表"
+        app:layout_constraintDimensionRatio="H,16:2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
 
-    <TextView
-        android:id="@+id/tv1"
-        android:layout_width="140dp"
-        android:layout_height="86dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="12dp"
-        android:background="#fd3"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/banner" />
-
-    <TextView
-        android:id="@+id/tv2"
+    <ListView
+        android:id="@+id/common_list"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="12dp"
-        android:text="马云:一年交税170多亿马云:一年交税170多亿马云:一年交税170多亿"
-        android:textColor="#000000"
-        android:textSize="16dp"
-        app:layout_constraintLeft_toRightOf="@id/tv1"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/banner"
+        app:layout_constraintBottom_toTopOf="@+id/tab1"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="12dp"
-        android:text="8分钟前"
-        android:textColor="#333"
-        android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@id/tv1"
-        app:layout_constraintLeft_toRightOf="@id/tv1" />
+        android:background="#3dd"/>
 
 
     <TextView
@@ -82,7 +35,7 @@
         android:layout_height="30dp"
         android:background="#f67"
         android:gravity="center"
-        android:text="Tab1"
+        android:text="不知道"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -94,7 +47,7 @@
         android:layout_height="30dp"
         android:background="#A67"
         android:gravity="center"
-        android:text="Tab2"
+        android:text="干嘛的"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toRightOf="@+id/tab1"
@@ -106,7 +59,7 @@
         android:layout_height="30dp"
         android:background="#767"
         android:gravity="center"
-        android:text="Tab3"
+        android:text="随便吧"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toRightOf="@id/tab2"
