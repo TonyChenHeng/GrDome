@@ -20,6 +20,12 @@ public class CommonModel {
     private int imgId;
 
 
+    public CommonModel(String title, String detail, int imgId) {
+        this.title = title;
+        this.detail = detail;
+        this.imgId = imgId;
+    }
+
     public String getTitle() {
         return title;
     }
