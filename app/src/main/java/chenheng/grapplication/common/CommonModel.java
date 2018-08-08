@@ -1,5 +1,7 @@
 package chenheng.grapplication.common;
 
+import android.content.Intent;
+
 /**
  * 版权：XXX公司 版权所有
  * 作者：TonyChen
@@ -19,11 +21,15 @@ public class CommonModel {
     //dome示例图
     private int imgId;
 
+    //跳转的Act
+    private Intent intent;
 
-    public CommonModel(String title, String detail, int imgId) {
+
+    public CommonModel(String title, String detail, int imgId, Intent intent) {
         this.title = title;
         this.detail = detail;
         this.imgId = imgId;
+        this.intent = intent;
     }
 
     public String getTitle() {
@@ -48,5 +54,13 @@ public class CommonModel {
 
     public void setImgId(int imgId) {
         this.imgId = imgId;
+    }
+
+    public Intent getIntent() {
+        return intent;
+    }
+
+    public void setIntent(Intent intent) {
+        this.intent = intent;
     }
 }
